@@ -26,11 +26,11 @@ from kivy.event import EventDispatcher
 class UndoRedoItem(object):
     def __init__(self,
                  do_action = None,
-                 do_args = None,
-                 do_kwargs = None,
+                 do_args = [],
+                 do_kwargs = {},
                  undo_action = None,
-                 undo_args = None,
-                 undo_kwargs = None,
+                 undo_args = [],
+                 undo_kwargs = {},
                  complete = False
                  ):
 
